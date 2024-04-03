@@ -11,18 +11,19 @@ print(len(set_countries))
 print("col" in set_countries)
 print("per" in set_countries)
 
-# Add 
+# Add  (adds a single element)
 set_countries.add("per")
 print(set_countries)
 
-# Update
+# Update (adds multiple elements)
 set_countries.update({"arg", "ecu"})
 print(set_countries)
 
-# Delete
+# Delete (raises an error if the element does not exist)
 set_countries.remove("col")
 print(set_countries)
 
+# Discard (does not raise an error if the element does not exist)
 set_countries.discard("ar")
 print(set_countries)
 
