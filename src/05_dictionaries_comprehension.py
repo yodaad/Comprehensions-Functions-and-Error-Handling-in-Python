@@ -44,7 +44,7 @@ print(new_dictionary_2)
 population_result = {country: population for (country, population) in population_2.items() if population > 50}
 print(population_result)
 
-# Dictionary Comprehension with a string - {key: value for key, value in string if condition} 
+# Dictionary Comprehension with a string - {key: value for key, value in string if condition}  
 text = "Hello Diego, how are you?"
-unique = {c: c.upper() for c in text if c in "aeiou" }
+unique = {c: text.count(c) for c in text if c in "aeiou" }
 print(unique)
