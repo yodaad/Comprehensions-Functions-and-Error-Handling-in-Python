@@ -8,7 +8,7 @@ def my_print(text):
 my_print("This is my print within a function ")
 my_print("Hello ")
 
-# Example 2 - Create a function that returns a value
+# Example 2 - Create a function that returns a value. A function can return another function. In this example we return the function my_print.
 def sum (a, b):
     my_print(a+b)
 
