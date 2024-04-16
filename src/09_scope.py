@@ -9,9 +9,9 @@ def increment():
     
     # Local variable price inside the function increment 
     price = 200
-    price = price + 10
-    print(price)
-    return price
+    result = price + 10
+    print("Result: ",result)
+    return result
 
 # Call the function
 print(price)
