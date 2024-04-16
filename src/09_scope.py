@@ -16,4 +16,3 @@ def increment():
 # Call the function
 print(price)
 price_2 = increment()
-print(price_2)
