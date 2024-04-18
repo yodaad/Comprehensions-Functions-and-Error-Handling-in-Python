@@ -15,6 +15,8 @@ items = [
     }
 ]
 
+
+# Map function with dictionaries and lambda function.
 prices = list(map(lambda item: item["price"], items))
 print(prices)
 
@@ -26,6 +28,5 @@ def add_taxes(item):
     item["final_price"] = item["price"] + item["taxes"]
     return item
     
-
 new_items = list(map(add_taxes, items))
 print(new_items)
