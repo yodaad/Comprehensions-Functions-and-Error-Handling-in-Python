@@ -23,10 +23,13 @@ print(prices)
 products = list(map(lambda item: item["product"], items))
 print(products)
 
-def add_taxes(item):
-    item["taxes"] = item["price"] * .19
-    item["final_price"] = item["price"] + item["taxes"]
-    return item
-    
+# Map function with dictionaries and lambda function that returns a dictionary.
+add_taxes = lambda item: {
+    "product": item["product"],
+    "price": item["price"],
+    "taxes": item["price"] * .19,
+    "final_price": item["price"] + item["price"] * .19
+}
+   
 new_items = list(map(add_taxes, items))
 print(new_items)
