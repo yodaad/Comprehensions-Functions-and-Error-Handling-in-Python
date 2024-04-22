@@ -33,5 +33,6 @@ add_taxes = lambda item: {
    
 new_items = list(map(add_taxes, items))
 products_with_taxes = [(item["product"], item["taxes"]) for item in new_items]
+print(items)
 print(new_items)
 print(products_with_taxes)
