@@ -10,6 +10,8 @@ assert sum(2,2) == 5
 """
 
 # Raise an exception in Python - raise keyword is used to raise an exception. It is used to raise an exception when a certain condition is not met.
-age = 10
-if age < 18:
-    raise Exception("No underage allowed.")
+password = input("Enter your password: ")
+if password != "1234abcd":
+    raise Exception("Wrong password!")
+else:
+    print("Welcome!")
