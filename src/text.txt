@@ -1,3 +1,6 @@
-Text line 1
-Text line 2
-Text line 3
+New line replaced with w+ and file.write
+Another line replaced with w+ and file.write
+Yet another line replaced with w+ and file.write
+New line created with r+ and file.write
+Another line created with r+ and file.write
+Yet another line created with r+ and file.write
